@@ -1,1 +1,23 @@
 // Navigation Styles here
+
+nav {
+	display: flex;
+	justify-content: space-evenly;
+	width: 45%;
+	align-items: center;
+	@media @tablet {
+		width: 60%;
+	}
+	@media @mobile {
+		width: 100%;
+	}
+
+	a {
+		color: @font-color;
+		font-size: 1.6rem;
+		text-decoration: none;
+		&:hover {
+			color: @eastern-blue;
+		}
+	}
+}
